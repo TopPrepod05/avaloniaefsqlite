@@ -18,11 +18,11 @@
 2. Открыть Developer PowerShell
 3. В Developer PowerShell вписать команду: 
 	 ```powershell
-		dotnet restore
+	dotnet restore
 	 ```
 4. Вписать вторую команду: 
 	```powershell
-		dotnet ef database update
+	dotnet ef database update
 	 ```
 5. Запустить и проверить работоспособность.
 
