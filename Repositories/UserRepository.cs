@@ -28,7 +28,6 @@ public class UserRepository(IDbContextFactory<AppDbContext> factory) : IUserRepo
     public async Task<List<User>> GetUsersAsync()
     {
         using var db = factory.CreateDbContext();
-        var users = await db.Users.ToListAsync();
-        return users;
+        return await db.Users.ToListAsync();
     }
 }
