@@ -43,4 +43,10 @@ public partial class MainViewModel : ViewModelBase
         await userService.AddAsync(Login, Email);
         await LoadUsersAsync();
     }
+
+    [RelayCommand] private async Task DeleteUser()
+    {
+        await userService.DeleteAsync(SelectedUser);
+        await LoadUsersAsync();
+    }
 }
